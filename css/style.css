@@ -1,0 +1,218 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  background: #fff;
+  color: #333;
+  line-height: 1.6;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  color: #333;
+  text-decoration: none;
+}
+
+p {
+  margin: 10px 0;
+}
+
+img {
+  width: 100%;
+}
+
+.container {
+  max-width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+header {
+  border-bottom: 1px solid #e3e3e3;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0px;
+  margin: 10px 0;
+  height: 70px;
+}
+
+.navbar ul {
+  display: flex;
+}
+
+.navbar a {
+  padding: 10px 0px;
+  margin: 0 15px;
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.navbar a:hover {
+  color: #1b1bb3;
+  text-decoration: underline;
+}
+
+/* Hello About Section */
+.hello,
+.skills,
+.experience,
+.education {
+  padding: 20px 0;
+  border-bottom: 1px solid #e3e3e3;
+}
+
+.column .about-img {
+  padding: 50px;
+}
+
+.about-img img {
+  border-radius: 50%;
+}
+
+.about-me-info p {
+  padding: 5px 0;
+}
+
+.about-me-info p .title,
+.skills-list p .title {
+  display: inline-block;
+  min-width: 100px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 0.7rem;
+}
+
+.about-me-info p i {
+  padding-right: 20px;
+}
+
+.about-me-info p i:hover {
+  color: #2424bb;
+}
+
+.about-btns a {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+/* Experience Section */
+.company {
+  padding-bottom: 2rem;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid #e3e3e3;
+}
+
+.no-margin-bottom {
+  border-bottom: none;
+}
+
+.company-key-responsiblity {
+  margin-top: 1rem;
+}
+
+.company-key-responsiblity ul li::before {
+  content: "■  ";
+  font-size: 0.7rem;
+  margin-right: 2.5px;
+  color: #1b1bb3;
+}
+
+/* Footer */
+.footer {
+  display: flex;
+  background-color: rgba(179, 187, 186, 0.829);
+  height: 5rem;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+}
+
+.footer i {
+  margin: 0 0.5rem;
+}
+
+.fa-heart {
+  color: rgb(180, 4, 4);
+}
+
+@media(max-width: 768px){
+
+  /* Navbar */
+  .navbar{
+    flex-direction: column;
+    padding: 0;
+  }
+
+  .navbar a {
+    margin: 0 5px;
+    font-size: 0.8rem;
+  }
+
+  .flex-columns .row {
+    flex-direction: column;
+  }
+
+  /* Hello Section */
+  .hello .row{
+    flex-direction: column-reverse;
+  }
+
+  .about-btns a {
+    display: inline;
+  }
+
+  .about-btns .btn {
+    padding: 0.5rem;
+  }
+
+  .text-limit {
+    max-width: 100%;
+  }
+
+  /* Technical section */
+  .skills-list p {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .skills-list p .title {
+    font-size: 0.8rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .skills-list p .tech-skills {
+    font-size: 0.8rem;
+    margin-bottom: 0.5rem;
+  }
+
+  /* Experience */
+
+  .large-dot {
+    font-size: 1rem;
+  }
+
+  .company-name-address,
+  .company-working-duration,
+  .degree-collegeName,
+  .pass-out-year{
+    font-size: 0.8rem;
+  }
+
+  .company-key-responsiblity li{
+    font-size: 0.6rem;
+  }
+
+}

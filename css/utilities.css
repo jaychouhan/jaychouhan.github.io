@@ -1,0 +1,53 @@
+.text-primary {
+  color: #1b1bb3;
+}
+
+.text-shade-light {
+  opacity: 0.6;
+}
+
+.text-limit {
+  max-width: 50%;
+}
+
+.large-dot {
+  font-size: 1.5rem;
+  font-weight: bold;
+
+}
+
+
+.btn {
+  display: inline-block;
+  text-align: center;
+  border: none;
+  border-radius: 2px;
+  padding: 1rem;
+  min-width: 12rem;
+  font-size: 0.8rem;
+  font-weight: 750;
+}
+
+.btn-primary {
+  background: #1b1bb3;
+  color: #fff;
+}
+
+.btn-light {
+  background: #e3e0e0;
+  color: #333;
+}
+
+.flex-columns .row {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.flex-columns .column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-basis: 100%;
+  flex: 1;
+}
